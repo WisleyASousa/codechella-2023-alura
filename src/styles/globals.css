@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Raleway:wght@200;300;400;500;600;700&display=swap');
 html,
 body {
   padding: 0;
@@ -22,7 +23,18 @@ main {
 footer {
   border-top: 1px solid #ccc;
 }
+:root{
+  --font-titulo: 'Audiowide', cursive;
+  --font-texto: 'Raleway', sans-serif;
+  --cor-fonte: #fff;
+  --cor-gradient: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
+  --cor-primaria: #008364;
+  --cor-secundaria: #4650BD;
+  --cor-terciaria: #304968;
+  --cor-quaternaria: #36C1A0;
+  --cor-quintiaria: #B6BCFF;
 
+}
 .flex-center {
   display: flex;
   justify-content: center;

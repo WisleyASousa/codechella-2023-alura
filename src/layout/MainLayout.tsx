@@ -13,7 +13,7 @@ export default function MainLayout(props: MainLayoutProps) {
           name="description"
           content="Sistema de gerenciamento de refeitórios do IFPI"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="./img/simbolo.ico" />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
