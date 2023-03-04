@@ -1,3 +1,6 @@
+.BG{
+  background: var(--cor-gradient)!important;
+}
 .bgNavBar {
   background-color: var(--cor-secundaria)!important;
   color: #fff;
@@ -12,4 +15,32 @@
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
+}
+
+@media screen and (min-width: 768px){
+  .container__banner{
+    overflow: hidden!important;
+    height: 385px;
+    
+  }
+  .banner{
+    object-fit: cover!important;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .text__header{
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1024px){
+  .container__banner{
+    overflow: hidden!important;
+    height: 410px;
+  }
+  .banner{
+    object-fit: cover!important;
+    width: 100%;
+    height: 100%;
+  }
 }
