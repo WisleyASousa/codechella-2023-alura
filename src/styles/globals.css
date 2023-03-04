@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Raleway:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@200;300;400;500;600;700&display=swap');
 html,
 body {
   padding: 0;
@@ -16,15 +16,8 @@ a {
   box-sizing: border-box;
 }
 
-main {
-  margin-top: 100px;
-}
-
-footer {
-  border-top: 1px solid #ccc;
-}
 :root{
-  --font-titulo: 'Audiowide', cursive;
+  --font-titulo: 'Calistoga', cursive;
   --font-texto: 'Raleway', sans-serif;
   --cor-fonte: #fff;
   --cor-gradient: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);

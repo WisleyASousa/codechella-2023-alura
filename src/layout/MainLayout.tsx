@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import MainLayoutProps from './MainLayoutProps'
-
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default function MainLayout(props: MainLayoutProps) {
   console.log(props)
@@ -23,22 +23,21 @@ export default function MainLayout(props: MainLayoutProps) {
           rel="stylesheet"
         ></link>
       </Head>
-
-      <div className={styles.page}>
-        <div className="container text-center ">
-          <div className="row">
-            <div className="col">
-
-            </div>
+      <div className="text-center">
+        <div className="">
+          <div className="">
+            <header className="">
+              <Navbar />
+            </header>
           </div>
-          <div className="row">
-            <div className="col-lg-2 col-xl-2">
-            </div>
-              <main className="text-center ">{props.children}</main>
+          <div className="">
+            <main className="">{props.children}</main>
+          </div>
+          <div className="">
+            <Footer />
           </div>
         </div>
       </div>
-
     </div>
   )
 }
