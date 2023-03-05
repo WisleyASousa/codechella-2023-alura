@@ -26,6 +26,8 @@ a {
   --cor-terciaria: #304968;
   --cor-quaternaria: #36C1A0;
   --cor-quintiaria: #B6BCFF;
+  --cor-sombra: #444444;
+  --cor-hover: #606ADA;
 
 }
 .flex-center {

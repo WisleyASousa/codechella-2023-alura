@@ -46,6 +46,15 @@
   text-align: center;
   line-height: 2.2rem;
 }
+.btnIngresso{
+  border-radius: 1rem;
+  box-shadow: 4px 4px 0px var(--cor-sombra);
+  background-color: var(--cor-secundaria);
+}
+.btnIngresso:hover{
+  background-color: var(--cor-hover);
+  box-shadow: 4px 4px 0px var(--cor-sombra);
+}
 
 @media screen and (min-width: 768px){
   .container__banner{
