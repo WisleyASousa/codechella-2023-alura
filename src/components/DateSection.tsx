@@ -7,14 +7,14 @@ export default function DateSection() {
     <div
       className={`px-3 d-flex flex-column  w-100 flex-lg-row justify-content-center py-4 ${styles.secaoDatas__container}`}
     >
-      <div className={` mx-5 py-4 ${styles.secaoDatas__containerImg}`}>
+      <div className={` py-3 ${styles.secaoDatas__containerImg}`}>
         <img
           src="./img/home/imghome1.png"
           className={` rounded-4 ${styles.secaoDatas__img}`}
           alt="Imagem de fundo da Aurora Boreal"
         />
       </div>
-      <div className={`d-flex flex-column align-items-center}`}>
+      <div className={`d-flex flex-column  align-items-center}`}>
         <div
           className={`py-2 align-self-center ${styles.secaoDatas__ContainerTitulo}`}
         >

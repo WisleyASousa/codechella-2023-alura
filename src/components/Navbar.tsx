@@ -5,8 +5,8 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <div className={`${styles.bgNavBar}`}>
-      <nav className={`navbar fixed navbar-expand-md px-lg-5 p-2`}>
+    <div className={`${styles.bgNavBar} `}>
+      <nav className={`navbar navbar-expand-md px-lg-5 p-2`}>
         <div className="container-fluid flex-md-column flex-lg-row ">
           <Link href="/">
             <a className="navbar-brand ">
@@ -31,22 +31,36 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse flex-grow-0" id="navbarNav">
-            <ul className="navbar-nav text-center  gap-md-5 gap-lg-1">
-              <li className="nav-item">
+            <ul
+              className={`${styles.navbarLista} text-nowrap navbar-nav text-center  gap-md-5 gap-lg-1`}
+            >
+              <li className={`nav-item `}>
                 <Link href="/experience">
-                  <a className="nav-link active text-white" aria-current="page">
-                    A Experiência
+                  <a
+                    className={`nav-link active text-white`}
+                    aria-current="page"
+                  >
+                    <span className={`${styles.navbarLista__Item} pb-3 px-4`}>
+                      A Experiência
+                    </span>
                   </a>
                 </Link>
               </li>
-
               <li className="nav-item">
                 <Link href="/mapOfSectors">
-                  <a className="nav-link text-white">Mapa de Setores</a>
+                  <a className="nav-link text-white">
+                    <span className={`${styles.navbarLista__Item} pb-3 px-2`}>
+                      Mapa de Setores
+                    </span>
+                  </a>
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white">Informações</a>
+                <a className="nav-link text-white">
+                  <span className={`${styles.navbarLista__Item} pb-3 px-4`}>
+                    Informações
+                  </span>
+                </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link text-white">Ingresso</a>

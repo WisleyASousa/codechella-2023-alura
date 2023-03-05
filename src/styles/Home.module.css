@@ -5,6 +5,17 @@
   background-color: var(--cor-secundaria)!important;
   color: #fff;
 }
+.navbarLista{
+  font-family: var(--font-texto);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 2.5rem;
+}
+.navbarLista__Item:nth-child(-n+3){
+  border-bottom: 1px solid #fff;
+}
+
 .bgHeader {
   background-color: var(--cor-secundaria)!important;
   color: #fff;
@@ -16,6 +27,9 @@
   font-weight: 400;
   text-align: center;
 }
+
+/* Datas do Evento (Introdução) */
+
 .secaoDatas__container{
   align-items: center;
 }
@@ -56,11 +70,53 @@
   box-shadow: 4px 4px 0px var(--cor-sombra);
 }
 
+/* Lista de Atrações (Sábado) */
+
+.tituloAttSaturday{
+  font-family: var(--font-titulo);
+  font-size: 3rem;
+  font-weight: 400;
+}
+.dayAttSaturday{
+  font-family: var(--font-titulo);
+  font-size: 2rem;
+  background-color: var(--cor-primaria);
+  
+}
+.containerListaBandas{
+  list-style: none;
+  font-family: var(--font-texto);
+}
+
+.containerListaBandas__banda:nth-child(1){
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.containerListaBandas__banda:nth-child(n+2):nth-child(-n+5){
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.containerListaBandas__banda:nth-child(n+6){
+  font-size: 2rem;
+  font-weight: 700;
+}
+.containerListaBandas__banda:nth-child(n+10){
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+
+/* Responsividade */
 @media screen and (min-width: 768px){
   .container__banner{
     overflow: hidden!important;
     height: 385px;
     
+  }
+  .navbarLista__Item:nth-child(-n+3){
+    border-bottom: none;
   }
   .banner{
     object-fit: cover!important;
@@ -83,9 +139,26 @@
     height: 381px;
   }
   .secaoDatas__texto{
-    width: 440px;
+    width: 600px;
     text-align: center;
-    
+  }
+  .containerDay{
+    position: relative;
+    height: 100px;
+  }
+  .containerDay__Line{
+    top: 50%;
+    left: 0;
+    width: 10%;
+    height: 1px;
+    background-color: var(--cor-primaria);
+    transform: translateY(-50%);
+  }
+  .tituloAttSaturday{
+    font-size: 4rem; 
+  }
+  .dayAttSaturday{
+    font-size: 3rem;
   }
 }
 
@@ -100,10 +173,17 @@
     height: 100%;
   }
   .secaoDatas__containerImg{
+
     padding-right: 0 !important;
   }
   .secaoDatas__img{
     width: 100%;
     height: 100%;
+  }
+  .secaoDatas__texto{
+    width: 500px;
+  }
+  .containerDay__Line{
+    width: 25%;
   }
 }
