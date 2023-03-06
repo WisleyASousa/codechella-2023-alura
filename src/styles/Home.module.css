@@ -34,7 +34,6 @@
   align-items: center;
 }
 .secaoDatas__containerImg{
-  
   width: 312px;
   height: 381px;
 
@@ -91,6 +90,7 @@
 .containerListaBandas__banda:nth-child(1){
   font-size: 3rem;
   font-weight: 800;
+  width: 100%;
 }
 
 .containerListaBandas__banda:nth-child(n+2):nth-child(-n+5){
@@ -109,6 +109,7 @@
 
 
 /* Responsividade */
+
 @media screen and (min-width: 768px){
   .container__banner{
     overflow: hidden!important;

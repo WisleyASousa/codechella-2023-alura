@@ -2,6 +2,8 @@
 import styles from '../styles/Home.module.css'
 import Btn from './Btn'
 
+const dates = ['<11 e 12 de Março>']
+
 export default function DateSection() {
   return (
     <div
@@ -19,8 +21,9 @@ export default function DateSection() {
           className={`py-2 align-self-center ${styles.secaoDatas__ContainerTitulo}`}
         >
           <h2 className={`${styles.secaoDatas__titulo} text-break text-white`}>
-            {' '}
-            11 e 12 de Março Aluródromo de São Paulo{' '}
+            {dates}
+            <br />
+            Aluródromo de São Paulo
           </h2>
         </div>
         <span
