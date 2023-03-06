@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 interface ImgBannersProps {
   src: string
   alt: string
+  className?: string
 }
 
 export default function ImgBanners(props: ImgBannersProps) {
@@ -11,7 +12,7 @@ export default function ImgBanners(props: ImgBannersProps) {
     <div className={`position-relative ${styles.container__banner} `}>
       <img
         src={props.src}
-        className={`d-block w-100 ${styles.banner}`}
+        className={`${props.className} d-block w-100 ${styles.banner}`}
         alt={props.alt}
       />
     </div>
