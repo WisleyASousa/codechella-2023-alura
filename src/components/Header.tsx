@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from '../styles/Home.module.css'
+import ImgBanners from './ImgBanners'
 
 export default function Header() {
   return (
     <div className={`position-relative ${styles.container__banner} `}>
       <section className="text-center">
-        <img
+        <ImgBanners
           src="./img/banner-homepage.png"
-          className={`d-block w-100 ${styles.banner}`}
           alt="Imagem de fundo da Aurora Boreal"
         />
         <div

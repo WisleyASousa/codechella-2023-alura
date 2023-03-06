@@ -4,6 +4,7 @@ import MainLayout from '../layout/MainLayout'
 import Header from '../components/Header'
 import DateSection from '../components/DateSection'
 import AttSaturday from '../components/AttSaturday'
+import ImgBanners from '../components/ImgBanners'
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +12,10 @@ const Home: NextPage = () => {
       <Header />
       <DateSection />
       <AttSaturday />
+      <ImgBanners
+        src="./img/home/imghome2.png"
+        alt="Imagem de fundo da Aurora Boreal"
+      />
     </MainLayout>
   )
 }
