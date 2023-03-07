@@ -106,7 +106,15 @@
   font-size: 2rem;
   font-weight: 500;
 }
-
+.img__home{
+  object-fit: cover!important;
+  width: 100%;
+  height: 100%;
+}
+.containerImg__home{
+  height: 338px;
+  overflow: hidden!important;
+}
 
 /* Responsividade */
 

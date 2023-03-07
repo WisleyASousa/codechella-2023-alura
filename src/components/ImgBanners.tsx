@@ -12,7 +12,7 @@ export default function ImgBanners(props: ImgBannersProps) {
     <div className={`position-relative ${styles.container__banner} `}>
       <img
         src={props.src}
-        className={`${props.className} d-block w-100 ${styles.banner}`}
+        className={`${props.className} img-fluid d-block w-100 ${styles.banner}`}
         alt={props.alt}
       />
     </div>
