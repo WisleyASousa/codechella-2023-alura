@@ -1,24 +1,14 @@
-/* eslint-disable @next/next/no-img-element */
 import 'bootstrap/dist/css/bootstrap.min.css'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import LogoLink from './LogoLink'
 
 export default function Navbar() {
   return (
     <div className={`${styles.bgNavBar} `}>
       <nav className={`navbar navbar-expand-md px-lg-5 p-2`}>
         <div className="container-fluid  flex-md-column flex-lg-row ">
-          <Link href="/">
-            <a className="navbar-brand ">
-              <img
-                className=""
-                src="./img/logo.png"
-                alt="Logo CodeChella"
-                width="200"
-                height="64"
-              />
-            </a>
-          </Link>
+          <LogoLink />
           <button
             className="navbar-toggler bg-transparent btn "
             type="button"
@@ -35,33 +25,41 @@ export default function Navbar() {
               <li className={`nav-item `}>
                 <Link href="/experience">
                   <a
-                    className={`nav-link p-0 active text-white `}
+                    className={`nav-link  active ${styles.navbarLista__link} text-white `}
                     aria-current="page"
                   >
                     A Experiência
-                    <div className={`${styles.navbarLista__Item} `}></div>
                   </a>
                 </Link>
+                <div className={`${styles.navbarLista__Item}`}></div>
               </li>
               <li className="nav-item">
                 <Link href="/mapOfSectors">
-                  <a className="nav-link p-0 text-white">
+                  <a
+                    className={`nav-link  text-white ${styles.navbarLista__link}`}
+                  >
                     Mapa de Setores
-                    <div className={`${styles.navbarLista__Item}`}></div>
                   </a>
                 </Link>
+                <div className={`${styles.navbarLista__Item}`}></div>
               </li>
               <li className="nav-item">
                 <Link href="/information">
-                  <a className="nav-link p-0 text-white">
+                  <a
+                    className={`nav-link  text-white ${styles.navbarLista__link}`}
+                  >
                     Informações
-                    <div className={`${styles.navbarLista__Item}`}></div>
                   </a>
                 </Link>
+                <div className={`${styles.navbarLista__Item}`}></div>
               </li>
               <li className="nav-item">
                 <Link href="/ticket">
-                  <a className="nav-link text-white p-0">Ingresso</a>
+                  <a
+                    className={`nav-link text-white ${styles.navbarLista__link} `}
+                  >
+                    Ingresso
+                  </a>
                 </Link>
               </li>
             </ul>

@@ -1,9 +1,10 @@
 import styles from '../styles/Home.module.css'
+import LogoLink from './LogoLink'
 
 export default function Footer() {
   return (
-    <footer className={`${styles.footer}bg-dark text-center text-white`}>
-      <span>footer</span>
+    <footer className={`${styles.footerContainer} text-center text-white`}>
+      <LogoLink />
     </footer>
   )
 }

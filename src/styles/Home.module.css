@@ -17,6 +17,9 @@
   width: 200px;
   margin: 0 auto;
 }
+.navbarLista__link{
+  padding: .5rem 0;
+}
 
 .bgHeader {
   background-color: var(--cor-secundaria)!important;
@@ -118,6 +121,11 @@
   overflow: hidden!important;
 }
 
+.footerContainer{
+  background-color: var(--cor-secundaria);
+  
+}
+
 /* Responsividade */
 
 @media screen and (min-width: 768px){
@@ -128,6 +136,9 @@
   }
   .navbarLista__Item:nth-child(-n+3){
     border-bottom: none;
+  }
+  .navbarLista__link{
+    padding: 0 !important;
   }
   .banner{
     object-fit: cover!important;
