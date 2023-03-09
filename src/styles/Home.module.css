@@ -125,6 +125,17 @@
   background-color: var(--cor-secundaria);
   
 }
+.texto__footer{
+  font-family: var(--font-texto);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.iconesFooter{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+}
 
 /* Responsividade */
 
@@ -182,6 +193,7 @@
   .dayAttSaturday{
     font-size: 3rem;
   }
+
 }
 
 @media screen and (min-width: 1024px){
@@ -207,5 +219,11 @@
   }
   .containerDay__Line{
     width: 25%;
+  }
+  .footerContainerInterno{
+    padding: 0 3rem !important;
+  }
+  .texto__footerInformacao{
+    width: 326px;
   }
 }
