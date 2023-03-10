@@ -2,19 +2,28 @@
 import styles from '../styles/Home.module.css'
 import ImgBanners from './ImgBanners'
 
-export default function Header() {
+interface HeaderProps {
+  src: string
+  alt?: string
+  className?: string
+  text?: string
+  text2?: string
+}
+
+export default function Header(props: HeaderProps) {
   return (
-    <div className={`position-relative ${styles.container__banner} `}>
+    <div className={`position-relative  ${styles.container__banner} `}>
       <section className="text-center">
         <ImgBanners
-          src="./img/banner-homepage.png"
+          src={props.src}
           alt="Imagem de fundo da Aurora Boreal"
+          className={`${props.className}`}
         />
         <div
           className={`${styles.text__header} position-absolute top-50 start-50 translate-middle`}
         >
-          <h2 className={`${styles.text__header}`}>Boas-vindas ao</h2>
-          <h2 className={`${styles.text__header}`}>#CodeChella2023!</h2>
+          <h2 className={`${styles.text__header} text-nowrap`}>{props.text}</h2>
+          <h2 className={`${styles.text__header}`}>{props.text2}</h2>
         </div>
       </section>
     </div>
