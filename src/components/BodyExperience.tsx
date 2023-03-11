@@ -48,7 +48,6 @@ export default function BodyExperience() {
           text={text}
           className={` ${styles.Img__experience} px-1`}
           className2={`${styles.secaoDatas__containerLocation} `}
-          // className3={`${styles.secaoDatas__LocationText}`}
         />
       </>
     )

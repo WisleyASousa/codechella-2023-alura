@@ -144,11 +144,49 @@
 
 .Img__experienceBanner{
   width: 100%;
+  /* colocar a imagem para ficar dentro do container*/
+  
   height: 270px;
   object-fit: cover!important;
 }
 .Img__experience:nth-child(1){
   align-items: start;
+}
+
+/* Mapa de Setores */
+.containerMapSectors{
+  width: 250px;
+  height: 360px;
+}
+.textoMapSectors{
+  font-family: var(--font-texto);
+  font-size: 1.2rem;
+}
+
+.boxColors1 {
+  width: 32px;
+  height: 32px;
+  background-color: var(--cor-pistaPremium);
+}
+.boxColors2 {
+  width: 32px;
+  height: 32px;
+  background-color: var(--cor-pistaComum);
+}
+.boxColors3 {
+  width: 32px;
+  height: 32px;
+  background-color: var(--cor-cadeirasTerreo);
+}
+.boxColors4 {
+  width: 32px;
+  height: 32px;
+  background-color: var(--cor-cadeirasSuperiores);
+}
+.boxColors5 {
+  width: 32px;
+  height: 32px;
+  background-color: var(--cor-rampas);
 }
 
 /* Responsividade */
@@ -208,6 +246,11 @@
   .dayAttSaturday{
     font-size: 3rem;
   }
+  /* Mapa de Setores */
+  .imgMapSectors{
+    width: 650px;
+    /* height: 550px; */
+  }
 
 }
 
@@ -243,18 +286,24 @@
 
   /* Pagine da Experência  */
 
+  .secaoDatas__containerHome{
+    justify-content: center !important;
+    gap: 2rem;
+  }
+
   .secaoDatas__containerLocation{
     justify-content: center !important;
     align-self: self-start !important;
     text-align: start !important;
     gap: 2rem;
   }
-  /* .secaoDatas__LocationText:nth-child(-n+2){
-    text-align: right !important;
-  } */
+
   .secaoDatas__containerLocation:nth-child(2){
     flex-direction: row-reverse !important;  
   }
-  /* .secaoDatas__LocationText:nth-child(2){
-  } */
+  /* Mapa de Setores */
+
+  .containerMapsColors{
+    gap: 4rem;
+  }
 }

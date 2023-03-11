@@ -6,6 +6,7 @@ import DateSection from '../components/DateSection'
 import AttSaturday from '../components/AttSaturday'
 import Img from '../components/Img'
 import Btn from '../components/Btn'
+import styles from '../styles/Home.module.css'
 
 const dates = ['< 11 e 12 de Março >']
 const titulo = ['Aluródromo de São Paulo']
@@ -28,6 +29,7 @@ const Home: NextPage = () => {
         date={dates}
         titulo={titulo}
         text={text}
+        className2={`${styles.secaoDatas__containerHome}`}
         children={
           <>
             <Btn />

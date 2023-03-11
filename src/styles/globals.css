@@ -29,6 +29,13 @@ a {
   --cor-sombra: #444444;
   --cor-hover: #606ADA;
 
+  --cor-pistaPremium: #0E7DF1;
+  --cor-pistaComum: #FE016E;
+  --cor-cadeirasTerreo: #01A89E;
+  --cor-cadeirasSuperiores: #3F51B5;
+  --cor-rampas: #0E7DF1;
+  
+
 }
 .flex-center {
   display: flex;
