@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.css'
 export default function BodyExperience() {
   const dates = [
     {
-      id: 1,
       img: './img/experienc/img1.png',
       alt: 'Mulher Feliz',
       titulo: 'Acessibilidade e Inclusão',
@@ -12,7 +11,6 @@ export default function BodyExperience() {
     },
 
     {
-      id: 2,
       img: './img/experienc/img2.png',
       alt: 'Sacola com Itans Reciclados',
       titulo: 'Sustentabilidade',
@@ -20,7 +18,6 @@ export default function BodyExperience() {
     },
 
     {
-      id: 3,
       img: './img/experienc/img3.png',
       alt: 'Montanhas-russa',
       titulo: 'Atrações',

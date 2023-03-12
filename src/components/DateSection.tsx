@@ -11,6 +11,7 @@ interface DateSectionProps {
   children?: React.ReactNode
   className2?: string
   className3?: string
+  className4?: string
 }
 
 export default function DateSection(props: DateSectionProps) {
@@ -18,7 +19,9 @@ export default function DateSection(props: DateSectionProps) {
     <div
       className={`px-3 d-flex flex-column justify-content-xl-evenly w-100 flex-lg-row justify-content-center  py-4 ${styles.secaoDatas__container}  ${props.className2}`}
     >
-      <div className={` py-3 ${styles.secaoDatas__containerImg}`}>
+      <div
+        className={` py-3 ${styles.secaoDatas__containerImg} ${props.className4}`}
+      >
         <img
           src={props.src}
           className={` rounded-4 ${props.className} ${styles.secaoDatas__img}`}

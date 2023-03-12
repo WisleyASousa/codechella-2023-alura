@@ -5,6 +5,7 @@ import React from 'react'
 import Header from '../components/Header'
 import styles from '../styles/Home.module.css'
 import MapsSectors from '../components/MapsSectors'
+import BodySectors from '../components/BodySectors'
 
 const MapOfSectors: NextPage = () => {
   return (
@@ -24,6 +25,12 @@ const MapOfSectors: NextPage = () => {
           alt="Mapa de setores"
         />
         <MapsSectors />
+      </div>
+      <div className={`${styles.containerBodySectors} pt-5`}>
+        <span className={`${styles.tituloBodySectors} text-white`}>
+          Mais detalhes sobre os setores:
+        </span>
+        <BodySectors className={``} />
       </div>
     </MainLayout>
   )
