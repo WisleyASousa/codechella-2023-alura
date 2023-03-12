@@ -74,7 +74,7 @@ export default function BodyExperience(props: BodyExperienceProps) {
   return (
     <div className={``}>
       <div
-        className={`${props.className}  d-flex flex-column flex-lg-row py-3 `}
+        className={`${props.className}  d-flex flex-column flex-lg-row py-3 justify-content-center`}
       >
         {renderAllDates(dates)}
       </div>
