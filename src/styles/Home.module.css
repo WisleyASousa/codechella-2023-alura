@@ -217,7 +217,17 @@
 .containerImg__bodySectors{
   width: 312px;
   height: 240px;
+} 
+
+/* Setor de Informações */
+
+.tituloBodyInformation{
+  font-family: var(--font-titulo);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: normal;
 }
+
 
 /* Responsividade */
 
