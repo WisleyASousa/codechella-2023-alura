@@ -3,6 +3,7 @@ import MainLayout from '../layout/MainLayout'
 import React from 'react'
 import Header from '../components/Header'
 import styles from '../styles/Home.module.css'
+import AccordionInformation from '../components/AccordionInformation'
 
 const Information: NextPage = () => {
   return (
@@ -14,9 +15,14 @@ const Information: NextPage = () => {
         className={`${styles.Img__experienceBanner}`}
       />
       <div>
-        <span className={`${styles.tituloBodyInformation} text-white`}>
-          Perguntas Frequentes:
-        </span>
+        <div className={`p-5`}>
+          <span className={` ${styles.tituloBodyInformation} text-white`}>
+            Perguntas Frequentes:
+          </span>
+        </div>
+        <div>
+          <AccordionInformation />
+        </div>
       </div>
     </MainLayout>
   )

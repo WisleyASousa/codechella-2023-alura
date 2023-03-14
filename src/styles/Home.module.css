@@ -228,6 +228,22 @@
   line-height: normal;
 }
 
+.container__headerAccordion {
+  background-color: var(--cor-secundaria) !important;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--font-texto);
+}
+.textBodyAccordion{
+  font-family: var(--font-texto);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  background-color: var(--cor-sextenaria);  
+}
+.containerAccordion {
+  padding: 0 1.5rem;
+}
 
 /* Responsividade */
 
@@ -299,6 +315,14 @@
     
   }
 
+  /* Informações Gerais */
+
+  .tituloBodyInformation{
+    font-size: 3rem;
+  }
+  .containerAccordion {
+    padding: 0 3.7rem;
+  }
 }
 
 @media screen and (min-width: 1024px){
@@ -360,11 +384,20 @@
     width: 312px;
     height: 240px;
   }
+
+  /* Setor de Informações */
+
+  .containerAccordion {
+    padding: 0 10rem;
+  }
 }
 @media screen and (min-width: 1440px) {
   .Img__bodySectors{
     width: 383px;
     height: 240px;
-    
+  }
+  /* Setor de Informações */
+  .containerAccordion {
+    padding: 0 13.8rem;
   }
 }
