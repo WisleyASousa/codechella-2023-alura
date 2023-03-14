@@ -3,7 +3,9 @@ import Btn from './Btn'
 
 export default function FormTicket() {
   return (
-    <div className="text-start mx-3 d-grid gap-4 pb-4">
+    <div
+      className={`${styles.containerForm} text-start mx-3 d-grid gap-4 pb-4 `}
+    >
       <div className="">
         <label
           htmlFor="nomeCompleto"
@@ -32,74 +34,80 @@ export default function FormTicket() {
           placeholder="nome@exemplo.com"
         />
       </div>
-      <div className="">
-        <label
-          htmlFor="cpfUsuario"
-          className={`${styles.textLabelForm} form-label text-white`}
-        >
-          CPF:
-        </label>
-        <input
-          type="text"
-          className="form-control  rounded-0 text-start"
-          id="cpfUsuario"
-          placeholder="000.000.000-00"
-        />
-      </div>
-      <div>
-        <label
-          htmlFor="tipoIngresso"
-          className={`${styles.textLabelForm} form-label text-white`}
-        >
-          Tipo de ingresso
-        </label>
-        <div className="form-floating ">
-          <select
-            className="form-select rounded-0 p-0 ps-2"
-            id="tipoIngresso"
-            aria-label="Floating select example"
-          >
-            <option selected>Tipo de Ingresso</option>
-            <option value="1">Inteira</option>
-            <option value="2">Meia entrada(Estudantil)</option>
-            <option value="3">Cortesia</option>
-          </select>
+      <div className="row">
+        <div className="d-grid gap-4 col-lg-6">
+          <div className="">
+            <label
+              htmlFor="cpfUsuario"
+              className={`${styles.textLabelForm} form-label text-white`}
+            >
+              CPF:
+            </label>
+            <input
+              type="text"
+              className="form-control  rounded-0 text-start"
+              id="cpfUsuario"
+              placeholder="000.000.000-00"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="tipoIngresso"
+              className={`${styles.textLabelForm} form-label text-white`}
+            >
+              Tipo de ingresso
+            </label>
+            <div className="form-floating ">
+              <select
+                className="form-select rounded-0 p-0 ps-2"
+                id="tipoIngresso"
+                aria-label="Floating select example"
+              >
+                <option selected>Tipo de Ingresso</option>
+                <option value="1">Inteira</option>
+                <option value="2">Meia entrada(Estudantil)</option>
+                <option value="3">Cortesia</option>
+              </select>
+            </div>
+          </div>
         </div>
-      </div>
-      <div>
-        <label
-          htmlFor="setorMap"
-          className={`${styles.textLabelForm} form-label text-white`}
-        >
-          Setor
-        </label>
-        <div className="form-floating ">
-          <select
-            className="form-select rounded-0 p-0 ps-2"
-            id="SetorMap"
-            aria-label="Floating select example"
-          >
-            <option selected>Onde deseja sentar</option>
-            <option value="1">Pista Premium</option>
-            <option value="2">Pista Comum</option>
-            <option value="3">Cadeiras térreo</option>
-            <option value="4">Cadeiras superiores</option>
-            <option value="5">Rampas</option>
-          </select>
+        <div className="d-grid gap-4 col-lg-6 d-lg-flex flex-lg-column-reverse">
+          <div>
+            <label
+              htmlFor="setorMap"
+              className={`${styles.textLabelForm} form-label text-white`}
+            >
+              Setor
+            </label>
+            <div className="form-floating ">
+              <select
+                className="form-select rounded-0 p-0 ps-2"
+                id="SetorMap"
+                aria-label="Floating select example"
+              >
+                <option selected>Onde deseja sentar</option>
+                <option value="1">Pista Premium</option>
+                <option value="2">Pista Comum</option>
+                <option value="3">Cadeiras térreo</option>
+                <option value="4">Cadeiras superiores</option>
+                <option value="5">Rampas</option>
+              </select>
+            </div>
+          </div>
+          <div className={`${styles.containerDataNasc}`}>
+            <label
+              htmlFor="dataNasc"
+              className={`${styles.textLabelForm} form-label text-white`}
+            >
+              Data de Nascimento:
+            </label>
+            <input
+              type="date"
+              className="form-control  rounded-0 text-start rounded-0"
+              id="dataNasc"
+            />
+          </div>
         </div>
-      </div>
-      <div className="">
-        <label
-          htmlFor="dataNasc"
-          className={`${styles.textLabelForm} form-label text-white`}
-        >
-          Data de Nascimento:
-        </label>
-        <input
-          type="date"
-          className="form-control  rounded-0 text-start rounded-0"
-          id="dataNasc"
-        />
       </div>
       <Btn
         text="Avançar!"

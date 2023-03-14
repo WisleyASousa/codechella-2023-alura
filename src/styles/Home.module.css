@@ -253,6 +253,7 @@
   font-weight: 700;
 }
 
+
 /* Responsividade */
 
 @media screen and (min-width: 768px){
@@ -331,6 +332,14 @@
   .containerAccordion {
     padding: 0 3.7rem;
   }
+/* Setor de Ingresso Formulario */
+  .containerDataNasc {
+    padding-right: 10rem;
+  }
+  .containerForm {
+    padding: 0 3.7rem;
+  }
+
 }
 
 @media screen and (min-width: 1024px){
@@ -398,14 +407,30 @@
   .containerAccordion {
     padding: 0 10rem;
   }
+  /* Setor de Ingresso Formulario */
+  .containerForm {
+    padding: 0 10rem;
+  }
+  .containerDataNasc {
+    padding-right: 0;
+  }
 }
 @media screen and (min-width: 1440px) {
-  .Img__bodySectors{
+  .Img__bodySectors {
     width: 383px;
     height: 240px;
   }
+
   /* Setor de Informações */
   .containerAccordion {
     padding: 0 13.8rem;
+  }
+
+  /* Setor de Ingresso Formulario */
+  .containerForm {
+    padding: 0 20rem;
+  }
+  .containerDataNasc {
+    padding-right: 0;
   }
 }
