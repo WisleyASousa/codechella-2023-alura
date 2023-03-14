@@ -32,7 +32,12 @@ const Home: NextPage = () => {
         className2={`${styles.secaoDatas__containerHome}`}
         children={
           <>
-            <Btn />
+            <Btn
+              type="button"
+              text="Comprar ingresso!"
+              src="./svgs/btn-simbol.svg"
+              alt="Botão de comprar ingresso"
+            />
           </>
         }
       />
