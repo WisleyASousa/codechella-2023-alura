@@ -2,10 +2,9 @@ import Head from 'next/head'
 import MainLayoutProps from './MainLayoutProps'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import styles from '../styles/Home.module.css'
+// import styles from '../styles/Home.module.css'
 
 export default function MainLayout(props: MainLayoutProps) {
-  console.log(props)
   return (
     <div>
       <Head>
@@ -21,7 +20,7 @@ export default function MainLayout(props: MainLayoutProps) {
           rel="stylesheet"
         ></link>
       </Head>
-      <div className={`text-center ${styles.BG}`}>
+      <div className={`text-center`}>
         <div className="">
           <div className="">
             <header className="">

@@ -5,7 +5,7 @@ import LogoLink from './LogoLink'
 export default function Footer() {
   return (
     <footer
-      className={`${styles.footerContainer} py-4 d-flex justify-content-center text-center text-white`}
+      className={`${styles.footerContainer} py-4 d-flex justify-content-center text-center text-white `}
     >
       <div
         className={`d-flex flex-column ${styles.footerContainerInterno} w-100 justify-content-lg-between align-items-md-center flex-lg-row gap-2 px-4`}
