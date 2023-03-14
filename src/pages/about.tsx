@@ -3,7 +3,7 @@ import MainLayout from '../layout/MainLayout'
 
 const About: NextPage = () => {
   return (
-    <MainLayout title="Refeitório IFPI Picos">
+    <MainLayout title="CodeChella 2023">
       <h1>Sobre</h1>
     </MainLayout>
   )

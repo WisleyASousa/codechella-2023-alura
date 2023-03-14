@@ -252,6 +252,17 @@
   font-size: 2rem;
   font-weight: 700;
 }
+/* Setor de Ingresso Sucess */
+.textHeaderIngresso{
+  white-space: break-spaces !important;
+  width: 312px;
+}
+.tituloBodyIngressoSucess{
+  font-family: var(--font-texto);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: normal;
+}
 
 
 /* Responsividade */
@@ -340,6 +351,12 @@
     padding: 0 3.7rem;
   }
 
+  /* Setor de Ingresso Sucess */
+
+  .textHeaderIngresso {
+    white-space: nowrap !important;
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1024px){

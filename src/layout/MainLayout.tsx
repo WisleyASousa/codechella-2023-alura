@@ -9,11 +9,8 @@ export default function MainLayout(props: MainLayoutProps) {
   return (
     <div>
       <Head>
-        <title>{props.title ?? 'Refeitório IFPI Picos'}</title>
-        <meta
-          name="description"
-          content="Sistema de gerenciamento de refeitórios do IFPI"
-        />
+        <title>{props.title ?? 'CodeChella 2023'}</title>
+        <meta name="description" content="CodeChella 2023" />
         <link rel="icon" href="./img/simbolo.ico" />
         <link
           rel="stylesheet"

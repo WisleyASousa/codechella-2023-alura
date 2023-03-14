@@ -6,6 +6,7 @@ interface HeaderProps {
   src: string
   alt?: string
   className?: string
+  className2?: string
   text?: string
   text2?: string
 }
@@ -22,7 +23,11 @@ export default function Header(props: HeaderProps) {
         <div
           className={`${styles.text__header} position-absolute top-50 start-50 translate-middle`}
         >
-          <h2 className={`${styles.text__header} text-nowrap`}>{props.text}</h2>
+          <h2
+            className={`${styles.text__header} ${props.className2} text-nowrap`}
+          >
+            {props.text}
+          </h2>
           <h2 className={`${styles.text__header}`}>{props.text2}</h2>
         </div>
       </section>
