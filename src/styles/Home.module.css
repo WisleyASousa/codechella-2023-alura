@@ -257,11 +257,32 @@
   white-space: break-spaces !important;
   width: 312px;
 }
+
 .tituloBodyIngressoSucess{
   font-family: var(--font-texto);
   font-size: 2rem;
   font-weight: 700;
   line-height: normal;
+}
+.containerTicketSucess{
+  width: 312px;
+  height: 565px;
+  background: var(--cor-gradient) !important;
+}
+
+.logoTicket{
+  width: 117px;
+  height: 32px;
+}
+.textTicketSucess:nth-child(1){
+  font-size: 2rem;
+  font-weight: 700;
+}
+.textTicketSucess{
+  font-family: var(--font-texto);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2.2rem;
 }
 
 
@@ -357,6 +378,17 @@
     white-space: nowrap !important;
     width: 100%;
   }
+  .containerTituloIngressoSucess{
+    padding: 3rem 5rem 1rem 5rem !important;
+  }
+  .containerTicketSucess{
+    width: 650px;
+    height: 685px;
+  }
+  .imgQrCode{
+    width: 340px;
+    height: 250px;
+  }
 }
 
 @media screen and (min-width: 1024px){
@@ -431,6 +463,18 @@
   .containerDataNasc {
     padding-right: 0;
   }
+
+  /* Setor de Ingresso Sucess */
+
+  .containerTicketSucess{
+    max-width: 100%;
+    width: 792px;
+    height: 350px;
+  }
+  .imgQrCode{
+    width: 250px;
+    height: 190px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .Img__bodySectors {
@@ -450,4 +494,11 @@
   .containerDataNasc {
     padding-right: 0;
   }
+
+  /* Setor de Ingresso Sucess */
+
+  .containerTituloIngressoSucess{
+    padding: 3rem 20rem 1rem 20rem !important;
+  }
+
 }
