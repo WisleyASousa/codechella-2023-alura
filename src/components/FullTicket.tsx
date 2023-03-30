@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from '../styles/Home.module.css'
 
-const imgQrCode = '/img/ingressos/qrCode.png'
+const imgQrCode = './img/ingressos/qrcode.png'
 
 const participante = {
   nomeCompleto: 'Wisley A. Sousa',
